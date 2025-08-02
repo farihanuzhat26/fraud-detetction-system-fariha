@@ -17,15 +17,6 @@ expected_columns = ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10',
 st.title("\U0001F4B3 Fraud Detection System")
 st.markdown("Upload a CSV of transactions and detect fraudulent activity in real-time.")
 
-# Show CSV template download
-with open("creditcard.csv", "rb") as f:
-    st.download_button(
-        label="📄 Download CSV Template",
-        data=f,
-        file_name="creditcard_template.csv",
-        mime="text/csv",
-    )
-
 # File upload
 uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
 
